@@ -63,8 +63,24 @@ pip install -r requirements.txt
       "webhook": "YOUR_DISCORD_WEBHOOK_URL",
       "authorization": "YOUR_PIXAI_AUTHORIZATION_TOKEN"
     }
-  ]
-  // Other configs ...
+  ],
+  "graphql": "https://api.pixai.art/graphql",
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+    "content-type": "application/json",
+    "origin": "https://pixai.art",
+    "priority": "u=1, i",
+    "referer": "https://pixai.art/",
+    "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "x-browser-id": "dff0ac0cf4998ee5165aaf728ad132f4"
+  }
 }
 ```
 
