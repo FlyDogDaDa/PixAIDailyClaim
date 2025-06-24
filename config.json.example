@@ -1,25 +1,8 @@
 {
-  "accounts": [
-    {
-      "webhook": "https://discord.com/api/webhooks/123456789020050522/aUtHOr-iS-hSU_MiNg_sHun",
-      "authorization": "Bearer eyJhbGciOiJFUzUxMiIsInR5cCI6IkpXVCJ9.eyJsZ2EiOjE3NDQwNzY5MDcsImlhdCI6MTc0NDA3NzYxNywiZXhwIjoxNzQ0NjgyNDE3LCJpc3MiOiJwaXhhaSIsInN1YiI6IjE2NDg5MTEzMDc4NzA1NjUzMzEiLCJqdGkiOiIxODY2MTYxMTUzMzU3OTAxMTMyIn0.ALVeYHKzj7-v5XsWAWEvOkuGmgd_iQPy35-Fnm5bdWCzxFU7EpyaIyzs_cnU_beZ6Gn0tKfs-w3JLTQ0aez20dp9AMRWYRrR_yZeMtPPVVLasVrVXNs5G1AvR_K3nq593v53McOx1IVEqMWnKyL-9h2Q5U4liDi8ROtAsMpP8FCUXVQo"
-    }
-  ],
-  "graphql": "https://api.pixai.art/graphql",
-  "headers": {
-    "accept": "application/json, text/plain, */*",
-    "accept-language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
-    "content-type": "application/json",
-    "origin": "https://pixai.art",
-    "priority": "u=1, i",
-    "referer": "https://pixai.art/",
-    "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"",
-    "sec-ch-ua-mobile": "?0",
-    "sec-ch-ua-platform": "\"Windows\"",
-    "sec-fetch-dest": "empty",
-    "sec-fetch-mode": "cors",
-    "sec-fetch-site": "same-site",
-    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
-    "x-browser-id": "dff0ac0cf4998ee5165aaf728ad132f4"
+  "chrome": {
+    "driver_path": "chromedriver.exe",
+    "user_data_dir": "D:\\.....\\Chrome_dev_session",
+    "debug_port": 9222,
+    "chrome_path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
   }
 }
