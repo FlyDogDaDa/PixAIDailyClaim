@@ -1,5 +1,9 @@
 config.json
 error_log/
+Chrome_dev_session
+chromedriver.exe
+
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
