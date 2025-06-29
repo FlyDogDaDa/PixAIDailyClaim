@@ -23,8 +23,11 @@ def build_driver(driver_path, chrome_path, user_data_dir, port):
     # 連接到瀏覽器
     service = webdriver.ChromeService(driver_path)
     options = ChromeOptions()
+    options.chrome_options = {"profile.managed_default_content_settings.images": 2}
+    # 關閉圖片載入
     options.add_experimental_option("debuggerAddress", f"127.0.0.1:{port}")
     browser = webdriver.Chrome(service=service, options=options)
+    browser.minimize_window()
     return browser
 
 
@@ -104,14 +107,24 @@ def main():
         chrome_config["user_data_dir"],
         chrome_config["debug_port"],
     )
-    driver.get("https://pixai.art/zh/@flydog-kwenen/files")  # 前往 PixAI
+    url = "https://pixai.art/zh/@flydog-kwenen/files"
+    # 只有當前網址不是目標網址時才前往
+    if driver.current_url != url:
+        print("網頁跳轉中...", end="")
+        driver.get(url)  # 前往 PixAI
+        print("結束!")
     try:
-        login(driver, 0.5)  # 登入
+        print("帳號登入中...", end="")
+        login(driver, 4)  # 登入
+        print("登入結束!")
     except TimeoutException:
         print("登入失敗，請你先登入Google帳號，謝謝。")
-        input("按Enter繼續")
+        input("登入後按Enter繼續")
         return
+    print("獎勵挖掘中...", end="")
     claim_all(driver, 3)
+    print("結束!")
+    driver.close()
     driver.quit()
 
 
